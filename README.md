@@ -1,4 +1,4 @@
-# Derive cluster rotation with intrinsic scatter Using MCMC
+# Derive cluster rotation with intrinsic scatter using MCMC
 
 This repository contains a Python script to model the rotation of a cluster. For this we fit a sine function to data with uncertainties using Markov Chain Monte Carlo (MCMC) via the emcee package. The script also models the intrinsic scatter around the sine function.
 
