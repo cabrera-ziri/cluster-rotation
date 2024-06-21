@@ -110,9 +110,9 @@ def getrotprofile(pa, ra, dec, rv, erv, dis, NPPMXL):
 
 
 
-dforbs = pd.read_csv('../../Documents/Database/orbital_params.csv')
+dforbs = pd.read_csv('orbital_params.csv')
 dforbs["Clusternum"] = dforbs["Clusternum"].astype(str)
-dfrvparams = pd.read_excel('../../Documents/Database/RV_parameters.xlsx')
+dfrvparams = pd.read_excel('RV_parameters.xlsx')
 dfrvparams["Cluster"] = dfrvparams["Cluster"].astype(str)
 
 # for s in range(0,len(dfrvparams)):
@@ -126,9 +126,9 @@ for s in range(1):
     fontsize = 14
 
     # Read in all stars
-    dft = pd.read_csv('../../Documents/RV/Cleaned_PM_RV_data/{x}.csv'.format(x=num))
+    dft = pd.read_csv('{x}.csv'.format(x=num))
     # Read in all stars matched with photometry
-    dfp = pd.read_csv('../../Documents/RV/Cleaned_PM_RV_data/MPs/{x}_MP.csv'.format(x=num))
+    dfp = pd.read_csv('{x}_MP.csv'.format(x=num))
     dfp1 = dfp[dfp['pop']=='P1']
     dfp2 = dfp[dfp['pop']=='P2']
 
@@ -205,5 +205,5 @@ for s in range(1):
         axis += 1
     plt.xlabel(r'Position angle $\theta_0$',fontsize=fontsize)
     fig.subplots_adjust(hspace=0, wspace=0)
-    plt.savefig('../../Documents/RV/All_plots/Holger_rotation/{x}.png'.format(x=num),dpi=200,bbox_inches='tight')
+    plt.savefig('figures/{x}.png'.format(x=num),dpi=200,bbox_inches='tight')
     plt.show()
