@@ -4,17 +4,17 @@ This repository contains a Python script to model the rotation of a cluster. For
 
 ## Features
 
-Fits a sine function to data with known uncertainties.
-Models intrinsic scatter in the data.
-Uses MCMC for parameter estimation.
-Supports parallel execution for faster computation.
-Generates diagnostic plots including a corner plot and residual plots.
+- Fits a sine function to data with known uncertainties.
+- Models intrinsic scatter in the data.
+- Uses MCMC for parameter estimation.
+- Supports parallel execution for faster computation.
+- Generates diagnostic plots including a corner plot and residual plots.
 
 ## Requirements
 
-Python 3.x
-NumPy
-pandas
-emcee
-corner
-matplotlib
+- Python 3.x
+- NumPy
+- pandas
+- emcee
+- corner
+- matplotlib
